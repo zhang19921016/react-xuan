@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <script>
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
+    if(!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+    }
+  </script>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_973111_y8if0h2bkl.css">
+</head>
+<body>
+<div id="app"></div>
+<script type="text/javascript">
+  //rem适配
+  !(function(){
+    const width = document.documentElement.clientWidth;
+    const styleNode = document.createElement('style');
+    styleNode.innerHTML = 'html{font-size: '+ width/10 +'px !important;}';
+    document.head.appendChild(styleNode);
+  })();
+</script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<div class="title">{{item.nickname}}</div>
+<div class="text">{{item.subTitle}}</div>
+<ul class="picLists">
+  <li v-for="(pic,index) in item.itemList" :key="index" v-if="item.itemList[index]">
+    <img  v-lazy="pic.itemUrl" alt="" >
+  </li>
+</ul>
+<div class="bottom">
+  <i class="iconfont icon-yanjing"></i>
+  <span>2453人看过</span>
+</div>
